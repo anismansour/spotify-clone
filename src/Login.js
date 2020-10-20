@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css';
+import { loginUrl } from './spotify';
 
 export class Login extends Component {
   render() {
@@ -9,7 +10,7 @@ export class Login extends Component {
           src="https://www.theprp.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
           alt="logo"
         />
-        <a href="ADD LINK TO SPOTIFY LOGIN">Login with Spotify</a>
+        <a href={loginUrl}>Login with Spotify</a>
       </div>
     );
   }
