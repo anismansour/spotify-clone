@@ -6,6 +6,7 @@ import { getTokenFromUrl } from './spotify';
 import SpotifyWebApi from 'spotify-web-api-js';
 import Player from './Player';
 import { useDataLayerValue } from './DataLayer';
+import { PlaylistPlay } from '@material-ui/icons';
 
 const spotify = new SpotifyWebApi();
 
@@ -31,8 +32,14 @@ function App() {
           user: user,
         });
       });
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: 'SET_PLAYLISTS',
+          playlists: playlists,
+        });
+      });
     }
-  }, [dispatch]);
+  }, []);
   //console.log('the user is ', user);
   //console.log('the :) is ', token);
 
