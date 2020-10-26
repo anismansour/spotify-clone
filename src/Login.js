@@ -7,7 +7,7 @@ export class Login extends Component {
     return (
       <div className="login">
         <img
-          src="https://www.theprp.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/56/Spotify_logo_horizontal_black.jpg"
           alt="logo"
         />
         <a href={loginUrl}>Login with Spotify</a>
