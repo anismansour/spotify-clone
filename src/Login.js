@@ -11,6 +11,7 @@ export class Login extends Component {
           alt="logo"
         />
         <a href={loginUrl}>Login with Spotify</a>
+        <p className="anis "> By Anis Mansour</p>
       </div>
     );
   }

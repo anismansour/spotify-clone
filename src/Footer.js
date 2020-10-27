@@ -18,8 +18,8 @@ function Footer() {
           alt=""
         />
         <div className="footer_sonInfo">
-          <h4> black</h4>
-          <p>yheheh</p>
+          <h4> Black Coffee</h4>
+          <p>Superman</p>
         </div>
       </div>
       <div className="footer_center">
